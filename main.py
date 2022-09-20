@@ -11,7 +11,9 @@ def easy(diff):
 	for possi in poss:
 		if possi == diff:
 			return render_template(f'{diff}/index.html')
-		else:
+		elif:
 			pass
+		else:
+			return "<h1>Fase não encontrada</h1>"
 if __name__ == "__main__":
 	app.run(debug=True, port=8080)
