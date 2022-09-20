@@ -5,15 +5,9 @@ app = Flask(__name__)
 def home():
 	return render_template("home/index.html")
 
-@app.route('/<diff>/')
-@app.route('/<diff>')
-def easy(diff):
-	for possi in poss:
-		if possi == diff:
-			return render_template(f'{diff}/index.html')
-		elif:
-			pass
-		else:
-			return "<h1>Fase não encontrada</h1>"
+@app.route('/<nan>/')
+@app.route('/<nan>')
+def easy(nan):
+	return f"<h1>{nan] não encontrada</h1>"
 if __name__ == "__main__":
 	app.run(debug=True, port=8080)
