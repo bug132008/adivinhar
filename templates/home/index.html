@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+  <script src="{{ url_for('static', filename='js/index.js')}}"></script>
+  <title>Bem vindo!</title>
+</head>
+<body>
+	<h1>Bem vindo ao meu primeiro jogo online!</h1>
+	<h2>Selecione a dificuldade: </h2>
+	<button onclick="ir('easy')">Easy: 100 números</button><br>
+	<button onclick="ir('medio')".>Médio: 200 números</button><br>
+	<button onclick="ir('hard')">Difícil: 300 números</button><br>
+	<button onclick="ir('impossivel')">Impossível: 250 números :)</button>
+</body>
+</html>

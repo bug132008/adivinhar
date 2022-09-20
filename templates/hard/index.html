@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/hard.css')}}">
+  <title>Jogo: Adivinhe o número!</title>
+</head>
+<body>
+  <h1>Último número chutado: <span id="chuteA"></span>
+  <input type="text" placeholder="Seu chute" id="chuteInput">
+  <button id="btnChute" onclick="chutar()">Chutar</button>
+  <br>
+  <span id="dica"></span>
+  <br>
+  <button class="reset n" onclick="resetar()"id="reset">Resetar</button>
+  <script src="{{ url_for('static', filename='js/hard.js')}}"></script>
+</body>
+</html>
